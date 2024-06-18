@@ -1,0 +1,104 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guessing Game</title>
+    
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="game.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+    <!-- <audio id="backgroundMusic" src="button.mp3" autoplay loop ></audio> -->
+
+
+
+    <!-- *********************************************************************************************************************************** -->
+
+    <div class="div">
+
+        <div class="div1">
+
+            <div class="innerdiv2"><h1>The Guessing Game</h1></div>
+            <div class="innerdiv1"></div>
+
+        </div>
+
+
+        <div class="div2">
+
+            <a href="https://partyrock.aws/u/swatihaldar/kMxlh1szf/NumberGuesser">  <button>Start Game</button> </a>
+
+            <button id="open-popup" class="clickButton">Rules</button>
+            <button id="open-popup1" class="clickButton"  >Setting</button>
+
+        </div>
+
+    </div>
+
+    <!-- *********************************************************************************************************************************** -->
+
+    <div id="popup" class="popup hidden">
+
+        <div class="popup-content">
+
+            <span id="close-popup" class="close-btn">&times;</span>
+            
+           <center> <div class="h2"><h2>Game Rules</h2></div></center>
+            <br>
+            <ol>
+                <li>Guess a number between 1 and 50.</li>
+                <li>You have 7 turns to guess the correct number.</li>
+                <li>If your guess is too high or too low, the game will provide feedback.</li>
+                <li>If you guess the correct number within 7 turns, you win!</li>
+                <li>If you can't guess the correct number in 7 turns, the game will reveal the correct number.</li>
+            </ol>
+
+        </div>
+
+    </div>
+
+    <!-- *********************************************************************************************************************************** -->
+
+    <div id="popup1" class="popup hidden1">
+
+        <div class="popup-content1">
+            <span id="close-popup1">&times;</span>
+            <center> <div class="h3"><h3>Select Mode</h3></div></center>
+            <center><button id="gaming-mode" class="clickButton" >Freez Mode</button></center>
+            <center><button id="normal-mode" class="clickButton" >Fire Mode</button></center>
+        </div>
+
+    </div>
+    
+    <!-- *********************************************************************************************************************************** -->
+
+    <audio id="clickSound" src="button-124476.mp3"></audio>
+
+</body>
+
+<script src="game.js"></script>
+
+</html>
